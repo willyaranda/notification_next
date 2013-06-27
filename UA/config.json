@@ -1,0 +1,19 @@
+{
+    "queues": [
+        {
+            "host": "localhost",
+            "port": 5672,
+            "login": "guest",
+            "password": "guest",
+            "heartbeat": 1200
+        }
+    ],
+    "db": {
+        "machines": [
+            ["localhost", 27017]
+        ],
+        "name": "push_notification_server"
+    },
+    "logfile": "Monitor.log",
+    "retryTime": 30000
+}
