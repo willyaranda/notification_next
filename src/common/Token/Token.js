@@ -8,7 +8,7 @@
 
 'use strict';
 
-var uuid = require('node-uuid'), crypto = require('./Cryptography/Cryptography.js'), cryptokey = require('../config.js').consts.cryptokey;
+var uuid = require('node-uuid'), crypto = require('./../Cryptography/Cryptography.js'), cryptokey = require('../../config.js').consts.cryptokey;
 
 function Token() {
 }

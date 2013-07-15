@@ -16,9 +16,9 @@ var util = require('util');
 
 var config = require('./config.json');
 
-var msgBroker = require('../common/MsgBroker');
-var pages = require('../common/Pages.js');
-var maintenance = require('../common/Maintenance.js');
+var msgBroker = require('../common/MsgBroker/MsgBroker');
+var pages = require('../common/Pages/Pages.js');
+var maintenance = require('../common/Maintenance/Maintenance.js');
 var helpers = require('../common/Helpers/Helpers.js');
 var log = require('../common/Logger/Logger.js');
 

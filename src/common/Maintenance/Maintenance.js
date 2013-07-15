@@ -8,7 +8,7 @@
 
 'use strict';
 
-var log = require('./Logger/Logger.js');
+var log = require('./../Logger/Logger.js');
 
 function Maintenance() {
     this.onmaintenance = false;

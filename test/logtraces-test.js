@@ -6,7 +6,7 @@
  * Guillermo Lopez Leal <gll@tid.es>
  */
 
-var lt = require("../src/common/logtraces.js");
+var lt = require("../src/common/Logger/logtraces.js");
 var assert = require('assert');
 var vows = require('vows');
 

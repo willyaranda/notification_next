@@ -8,13 +8,13 @@
 
 'use strict';
 
-var DataStore = require('./DataStore/DataStore.js');
-var Log = require('./Logger/Logger.js');
-var helpers = require('./Helpers/Helpers.js');
+var DataStore = require('./../DataStore/DataStore.js');
+var Log = require('./../Logger/Logger.js');
+var helpers = require('./../Helpers/Helpers.js');
 var events = require('events');
 var util = require('util');
 
-var operator = require('./DB/operator');
+var operator = require('./../DB/operator');
 
 
 function MobileNetwork() {

@@ -14,8 +14,8 @@ var log = require('../common/Logger/Logger.js'),
     cluster = require('cluster'),
     consts = require('../config.js').consts,
     dgram = require('dgram'),
-    pages = require('../common/Pages.js'),
-    maintenance = require('../common/Maintenance.js'),
+    pages = require('../common/Pages/Pages.js'),
+    maintenance = require('../common/Maintenance/Maintenance.js'),
     helpers = require('../common/Helpers/Helpers.js');
 
 function server(ip, port, ssl) {

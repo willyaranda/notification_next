@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var lt = require("../src/common/logtraces.js").logtraces;
+var lt = require("../src/common/Logger/logtraces.js").logtraces;
 
 if (!process.argv[2]) {
   console.log('Please, specify a log ID as:');

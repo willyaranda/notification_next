@@ -9,12 +9,10 @@
 // We cannot use strict because of octal literals :(
 //'use strict';
 
-var fs = require('fs'),
-    logparams = require('./config.json'),
-    loglevel = require('../Constants.js').loglevels,
-    logtraces = require('../logtraces.js').logtraces;
-
-var loglevel = require('../Constants.js').loglevels;
+var fs = require('fs');
+var logparams = require('./config.json');
+var loglevel = logparams.loglevels;
+var logtraces = require('./logtraces.js').logtraces;
 
 /**
  * Log levels:
@@ -28,7 +26,9 @@ var loglevel = require('../Constants.js').loglevels;
  * # NOTIFY: General notifications, ie. New connections
  * # CRITICAL: When a CRITICAL trace is sent the process will be STOPPED
  */
-var LOGLEVEL = loglevel.DEBUG | loglevel.INFO | loglevel.ERROR | loglevel.CRITICAL | loglevel.ALERT | loglevel.NOTIFY | loglevel.ALARM
+var LOGLEVEL = loglevel.DEBUG | loglevel.INFO | loglevel.ERROR |
+               loglevel.CRITICAL | loglevel.ALERT |
+               loglevel.NOTIFY | loglevel.ALARM;
 
 /**
  * Log levels:
@@ -114,7 +114,8 @@ Logger.prototype.log = function (level, message, trace, color, object) {
         if (object) {
             Object.keys(object).forEach(function (k) {
                 if (typeof(object[k]) === 'object') {
-                    message = message.replace('::' + k, JSON.stringify(object[k]));
+                    message = message.replace('::' + k,
+                        JSON.stringify(object[k]));
                 } else {
                     message = message.replace('::' + k, object[k]);
                 }
@@ -124,7 +125,8 @@ Logger.prototype.log = function (level, message, trace, color, object) {
     }
 
     // Print trace
-    var logmsg = '[' + this.appname + ' # ' + level + '] - {' + (new Date()) + ' (' + Date.now() + ')} - ' + message;
+    var logmsg = '[' + this.appname + ' # ' + level + '] - {' + (new Date()) +
+        ' (' + Date.now() + ')} - ' + message;
     if (object) {
         logmsg += ' ' + this.color_PURPLE + JSON.stringify(object);
     }
@@ -151,7 +153,8 @@ Logger.prototype.critical = function (message, object) {
     if (this.logLevel & loglevel.CRITICAL) {
         this.log('CRITICAL', message, true, this.color_RED, object);
     }
-    this.log('CRITICAL', 'WE HAVE A CRITICAL ERROR, WE ARE CLOSING!!!', false, this.color_red);
+    this.log('CRITICAL', 'WE HAVE A CRITICAL ERROR, WE ARE CLOSING!!!',
+        false, this.color_red);
     // We cannot continue our process, kill it!
     process.exit(1);
 };

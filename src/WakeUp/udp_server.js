@@ -8,8 +8,8 @@
  */
 
 var log = require('../common/Logger/Logger.js'),
-    msgBroker = require('../common/MsgBroker.js'),
-    mn = require('../common/MobileNetwork.js'),
+    msgBroker = require('../common/MsgBroker/MsgBroker.js'),
+    mn = require('../common/MobileNetwork/MobileNetwork.js'),
     http = require('http'),
     https = require('https'),
     urlparser = require('url');

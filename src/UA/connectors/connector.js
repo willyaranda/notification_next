@@ -7,7 +7,7 @@
  * Guillermo Lopez Leal <gll@tid.es>
  */
 
-var mn = require('../../common/MobileNetwork.js'),
+var mn = require('../../common/MobileNetwork/MobileNetwork.js'),
     log = require('../../common/Logger/Logger.js'),
     net = require('net'),
     connector_ws = require('./connector_ws.js'),

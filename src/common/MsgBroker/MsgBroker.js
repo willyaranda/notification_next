@@ -10,10 +10,10 @@
 'use strict';
 
 var amqp = require('amqp');
-var log = require('./Logger/Logger.js');
+var log = require('./../Logger/Logger.js');
 var events = require('events');
 var util = require('util');
-var helpers = require('./Helpers/Helpers.js');
+var helpers = require('./../Helpers/Helpers.js');
 
 var gControlledClose = false;
 

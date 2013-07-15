@@ -10,7 +10,7 @@
 var vows = require('vows');
 var assert = require('assert');
 
-var Maintenance = require('../src/common/Maintenance.js');
+var Maintenance = require('../src/common/Maintenance/Maintenance.js');
 
 
 var sendSIGUSR1 = function () {

@@ -9,7 +9,7 @@
 'use strict';
 
 var log = require('../common/Logger/Logger.js');
-var msgBroker = require('../common/MsgBroker.js');
+var msgBroker = require('../common/MsgBroker/MsgBroker.js');
 var dataStore = require('../common/DataStore/DataStore.js');
 var config = require('./config.json');
 var events = require('events');

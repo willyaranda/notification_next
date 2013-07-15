@@ -10,7 +10,7 @@
 var vows = require('vows');
 var assert = require('assert');
 
-var MobileNetwork = require('../src/common/MobileNetwork.js');
+var MobileNetwork = require('../src/common/MobileNetwork/MobileNetwork.js');
 
 /*var Log = require('../Logger');
 Log.init('test', 'MN-test', 1);*/

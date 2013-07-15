@@ -13,19 +13,19 @@ var log = require('../common/Logger/Logger.js'),
     cluster = require('cluster'),
     crypto = require('../common/Cryptography/Cryptography.js'),
     dataManager = require('./datamanager.js'),
-    token = require('../common/Token.js'),
+    token = require('../common/Token/Token.js'),
     helpers = require('../common/Helpers/Helpers.js'),
-    msgBroker = require('../common/MsgBroker.js'),
+    msgBroker = require('../common/MsgBroker/MsgBroker.js'),
     config = require('../config.js').NS_UA_WS,
     consts = require('../config.js').consts,
     errorcodes = require('../common/Constants').errorcodes.GENERAL,
     errorcodesWS = require('../common/Constants').errorcodes.UAWS,
     statuscodes = require('../common/Constants').statuscodes,
-    pages = require('../common/Pages.js'),
+    pages = require('../common/Pages/Pages.js'),
     url = require('url'),
     http = require('http'),
     https = require('https'),
-    maintenance = require('../common/Maintenance.js');
+    maintenance = require('../common/Maintenance/Maintenance.js');
 
 function server(ip, port, ssl) {
     this.ip = ip;

@@ -8,7 +8,7 @@
 
 var assert = require('assert');
 var vows = require('vows');
-var token = require('../src/common/Token.js');
+var token = require('../src/common/Token/Token.js');
 
 //Internal vars
 var NUM_TOKENS = 50000;
