@@ -291,7 +291,7 @@ exports.logtraces = {
 
     ERROR_CASDIRECTORYUNDEFINED: {
         id: 0x2502,
-        m: "CAs directory undefined! - check config.js"
+        m: "CAs directory undefined! - check config.json"
     },
 
     ERROR_NOCADEFINED: {

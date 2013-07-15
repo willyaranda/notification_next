@@ -1,4 +1,5 @@
-/*
+/* jshint node: true */
+/**
  * PUSH Notification server
  * (c) Telefonica Digital, 2012 - All rights reserved
  * License: GNU Affero V3 (see LICENSE file)
@@ -8,133 +9,139 @@
 
 'use strict';
 
-var amqp = require('amqp'),
-    log = require('./Logger.js'),
-    events = require('events'),
-    util = require('util');
+var amqp = require('amqp');
+var log = require('./Logger.js');
+var events = require('events');
+var util = require('util');
 
 var gControlledClose = false;
+
+// Constants
+var QUEUE_DISCONNECTED = 0;
+var QUEUE_CREATED = 1;
+var QUEUE_ERROR = 2;
+var QUEUE_CONNECTED = 3;
 
 var MsgBroker = function () {
     events.EventEmitter.call(this);
     this.queues = [];
+    this.conns = [];
+    var self = this;
+};
+util.inherits(MsgBroker, events.EventEmitter);
 
-    this.init = function (queuesConf) {
-        this.queuesConf = queuesConf;
-        log.debug('msgBroker::queue.init --> Connecting to the queue servers');
+MsgBroker.prototype.init = function (queuesConf) {
+    log.info('msgBroker::queue.init --> Connecting to the queue servers');
 
-        //Create connection to the broker
-        if (!Array.isArray(queuesConf)) queuesConf = [queuesConf];
-        for (var i = queuesConf.length - 1; i >= 0; i--) {
-            process.nextTick(this.createConnection.bind(this, i));
-        }
-    };
+    //Create connection to the broker
+    if (!Array.isArray(queuesConf)) {
+        queuesConf = [queuesConf];
+    }
 
-    // Get some events love
-    this.once('queueconnected', function() {
-        log.info('MsgBroker::init --> Connected to ' +
-            JSON.stringify(this.queuesConf));
-        this.emit('connected');
-    });
-    this.on('queueconnected', (function () {
-        log.debug('msgBroker::queueconnected --> New queue connected, we have ' + this.queues.length + ' connections opened');
-    }).bind(this));
-
-    this.on('queuedisconnected', (function () {
-        log.debug('msgBroker::queuedisconnected --> Queue disconnected, we have  ' + this.queues.length + ' connections opened');
-        if (!this.queues.length) {
-            if (!gControlledClose) this.emit('disconnected');
-            this.close();
-        }
-    }).bind(this));
-
-    this.close = function (controlled) {
-        gControlledClose = true;
-        this.queues.forEach(function (element) {
-            if (element.queue) {
-                element.end();
-            }
-        });
-        log.info('msgbroker::close --> Closing connection to msgBroker');
-    };
-
-    this.subscribe = function (queueName, args, callback) {
-        this.queues.forEach(function (connection) {
-            if (!connection) return;
-            var conn = connection;
-            conn.queue(queueName, args, function (q) {
-                log.info('msgbroker::subscribe --> Subscribed to queue: ' + queueName);
-                q.bind('#');
-                q.subscribe(function (message) {
-                    return callback(message.data);
-                });
-            });
-        });
-    };
-
-    /**
-     * Insert a new message into the queue
-     */
-    this.push = function (queueName, body) {
-        log.debug('msgbroker::push --> Sending to the queue ' + queueName + ' the package:', body);
-        //Send to one of the connections that is connected to a queue
-        //TODO: send randomly , not to the first open connection (which is the easiest 'algorithm')
-        var sent = false;
-        this.queues.forEach(function (connection) {
-            if (connection && !sent) {
-                connection.publish(queueName, JSON.stringify(body));
-                sent = true;
-            }
-        });
-    };
-
-    this.createConnection = function (i) {
-        var conn = amqp.createConnection({
-            port: this.queuesConf[i].port,
-            host: this.queuesConf[i].host,
-            login: this.queuesConf[i].login,
-            password: this.queuesConf[i].password,
-            heartbeat: this.queuesConf[i].heartbeat
-        });
-
-        // Events for this queue
-        conn.on('ready', (function () {
-            log.debug("msgbroker::queue.ready --> Connected to one Message Broker");
-            this.queues.push(conn);
-            this.emit('queueconnected');
-        }).bind(this));
-
-        conn.on('close', (function () {
-            var index = this.queues.indexOf(conn);
-            if (index >= 0) {
-                this.queues.splice(index, 1);
-            }
-            if (!gControlledClose) {
-                this.emit('queuedisconnected', index);
-                log.info(log.messages.ERROR_MBERRORBROKERDISCONNECTED);
-            }
-        }).bind(this));
-
-        conn.on('error', (function (error) {
-            log.error(log.messages.ERROR_MBCONNECTIONERROR, {
-                error: error
-            });
-            var index = this.queues.indexOf(conn);
-            if (index >= 0) {
-                this.queues.splice(index, 1);
-            }
-        }).bind(this));
-
-        conn.on('heartbeat', (function () {
-            log.debug('msgbroker::heartbeat');
-        }).bind(this));
-    };
+    for (var i = queuesConf.length - 1; i >= 0; i--) {
+        this.createConnection(queuesConf[i]);
+    }
 };
 
-///////////////////////////////////////////
-// Singleton
-///////////////////////////////////////////
-util.inherits(MsgBroker, events.EventEmitter);
+MsgBroker.prototype.close = function (controlled) {
+    gControlledClose = controlled;
+    this.queues.forEach(function (element) {
+        if (element.queue) {
+            element.end();
+        }
+    });
+    log.info('msgbroker::close --> Closing connection to msgBroker');
+};
+
+MsgBroker.prototype.subscribe = function (queueName, args, callback) {
+    this.queues.forEach(function (connection) {
+        if (!connection) {
+            return;
+        }
+        connection.queue(queueName, args, function (q) {
+            log.info('msgbroker::subscribe --> Subscribed to queue: ' + queueName);
+            q.bind('#');
+            q.subscribe(function (message) {
+                return callback(message.data);
+            });
+        });
+    });
+};
+
+/**
+ * Insert a new message into the queue
+ */
+MsgBroker.prototype.push = function (queueName, body) {
+    log.debug('msgbroker::push --> Sending to the queue ' + queueName + ' the package:', body);
+    //Send to one of the connections that is connected to a queue
+    var sent = false;
+    this.queues.forEach(function (connection) {
+        if (connection && !sent) {
+            connection.publish(queueName, JSON.stringify(body));
+            sent = true;
+        }
+    });
+};
+
+MsgBroker.prototype.createConnection = function (queuesConf) {
+    var conn = new amqp.createConnection({
+        port: queuesConf.port,
+        host: queuesConf.host,
+        login: queuesConf.login,
+        password: queuesConf.password,
+        heartbeat: queuesConf.heartbeat
+    });
+    conn.state = QUEUE_CREATED;
+    conn.id = Math.random();
+    this.conns.push(conn);
+
+    // Events for this queue
+    var self = this;
+    conn.on('ready', (function () {
+        conn.state = QUEUE_CONNECTED;
+        log.info("msgbroker::queue.ready --> Connected to one Message Broker");
+        self.queues.push(conn);
+        self.emit('connected');
+    }));
+
+    conn.on('close', (function () {
+        var index = self.queues.indexOf(conn);
+        if (index >= 0) {
+            self.queues.splice(index, 1);
+        }
+        var length = self.queues.length;
+        var allDisconnected = self.conns.every(self.allDisconnected);
+        var pending = self.conns.some(self.pending);
+        if (length === 0 && allDisconnected && !pending) {
+            if (!gControlledClose) {
+                self.emit('disconnected');
+            }
+            self.close();
+        }
+        if (conn.state === QUEUE_CONNECTED) {
+            conn.state = QUEUE_DISCONNECTED;
+        }
+    }));
+
+    conn.on('error', (function (error) {
+        log.error(log.messages.ERROR_MBCONNECTIONERROR, {
+            "error": error
+        });
+        conn.state = QUEUE_ERROR;
+    }));
+
+    conn.on('heartbeat', (function () {
+        log.debug('msgbroker::heartbeat');
+    }));
+};
+
+MsgBroker.prototype.allDisconnected = function (element) {
+    return element.state !== QUEUE_DISCONNECTED;
+};
+
+MsgBroker.prototype.pending = function (element) {
+    return element.state !== QUEUE_CREATED;
+};
 
 var _msgbroker = new MsgBroker();
 function getMsgBroker() {

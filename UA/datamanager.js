@@ -9,10 +9,10 @@
 
 var dataStore = require('../common/DataStore'),
     log = require('../common/Logger.js'),
-    helpers = require('../common/helpers.js'),
+    helpers = require('../common/Helpers.js'),
     Connectors = require('./connectors/connector.js').getConnector(),
-    errorcodesWS = require('../common/constants.js').errorcodes.UAWS,
-    connectionstate = require('../common/constants.js').connectionstate;
+    errorcodesWS = require('../common/Constants.js').errorcodes.UAWS,
+    connectionstate = require('../common/Constants.js').connectionstate;
 
 function datamanager() {
     log.info('dataManager --> In-Memory data manager loaded.');
@@ -70,6 +70,7 @@ datamanager.prototype = {
             dataStore.unregisterNode(
                 uaid,
                 fullyDisconnected,
+                //TODO: NEW QUEUE BASED ON CONNECTIONSTATE.WAKEUP,
                 function (error) {
                     if (!error) {
                         log.debug('dataManager::unregisterNode --> Unregistered');

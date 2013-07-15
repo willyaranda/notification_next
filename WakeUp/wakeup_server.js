@@ -16,7 +16,7 @@ var log = require('../common/Logger.js'),
     dgram = require('dgram'),
     pages = require('../common/Pages.js'),
     maintenance = require('../common/Maintenance.js'),
-    helpers = require('../common/helpers.js');
+    helpers = require('../common/Helpers.js');
 
 function server(ip, port, ssl) {
     this.ip = ip;

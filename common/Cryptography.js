@@ -25,9 +25,8 @@ Cryptography.generateHMAC = function (data, key) {
     return crypto.createHmac('sha1', key).update(data).digest('hex');
 };
 
-var crypt = new Cryptography();
-function getCrypto() {
-    return crypt;
-}
-
-module.exports = getCrypto();
+module.exports = {
+    hashSHA256: Cryptography.hashSHA256,
+    hashSHA512: Cryptography.hashSHA512,
+    generateHMAC: Cryptography.generateHMAC
+};

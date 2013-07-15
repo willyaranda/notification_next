@@ -24,7 +24,7 @@ Maintenance.prototype.inactive = function () {
     this.onmaintenance = false;
 };
 
-Maintenance.prototype.getStatus = function () {
+Maintenance.prototype.isActive = function () {
     return this.onmaintenance;
 };
 

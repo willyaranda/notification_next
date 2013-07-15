@@ -10,8 +10,8 @@
 //'use strict';
 
 var fs = require('fs'),
-    logparams = require('../config.js').Logger,
-    loglevel = require('./constants.js').loglevels,
+    logparams = require('../config.js').logger,
+    loglevel = require('./Constants.js').loglevels,
     logtraces = require('./logtraces.js').logtraces;
 
 /**

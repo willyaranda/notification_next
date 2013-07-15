@@ -12,18 +12,18 @@ var publicBaseURL = require('../config.js').consts.publicBaseURL;
 var Cryptography = require('./Cryptography.js');
 var exec = require('child_process').exec;
 
-/**
- * Gets the public notification URL for the given apptoken
- */
+
 function getNotificationURL(apptoken) {
     return publicBaseURL + '/notify/' + apptoken;
 }
 exports.getNotificationURL = getNotificationURL;
 
+
 function getAppToken(watoken, pbkbase64) {
     return Cryptography.hashSHA256(watoken + pbkbase64);
 }
 exports.getAppToken = getAppToken;
+
 
 function padNumber(number, len) {
     var str = '' + number;
@@ -34,14 +34,15 @@ function padNumber(number, len) {
 }
 exports.padNumber = padNumber;
 
+
 function checkCallback(callback) {
     if (typeof callback !== 'function') {
-        callback = function () {
-        };
+        callback = function () {};
     }
     return callback;
 }
 exports.checkCallback = checkCallback;
+
 
 function getMaxFileDescriptors(cb) {
     exec('ulimit -n', function (error, stdout) {
@@ -50,30 +51,15 @@ function getMaxFileDescriptors(cb) {
 }
 exports.getMaxFileDescriptors = getMaxFileDescriptors;
 
-/**
- * Check if a version is a valid one for this API (v1)
- * In v1 case:
- *   - should be a number
- *   - should not be NaN
- *   - should be greater or equal than 0
- */
-function isVersion(version) {
-    var number = parseInt(version, 10);
-    if (typeof number !== 'number') {
-        return false;
-    }
 
-    if (isNaN(number)) {
-        return false;
-    }
-
-    return number >= 0;
+function isVersion(n) {
+    return !isNaN(parseInt(n, 10)) && isFinite(n) &&
+        (n < 9007199254740992) && (n >= 0) && (n % 1 === 0);
 }
 exports.isVersion = isVersion;
 
 
 function getCaChannel() {
-
     var log = require('./Logger.js');
     var caDir = require('../config.js').consts.caDir;
 

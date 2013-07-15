@@ -12,7 +12,25 @@
         "machines": [
             ["localhost", 27017]
         ],
-        "name": "push_notification_server"
+        "name": "push_notification_server",
+        "options": {
+            "db": {},
+            "server": {
+                "socketOptions": {
+                    "keepAlive": 100
+                }
+            },
+            "replSet": {
+                "socketOptions": {
+                    "keepAlive": 1
+                }
+            },
+            "mongos": {
+                "socketOptions": {
+                    "keepAlive": 1
+                }
+            }
+        }
     },
     "logfile": "Monitor.log",
     "retryTime": 30000

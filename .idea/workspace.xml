@@ -1,22 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4787f03-cfed-48e7-b72a-f543f44b5403" name="Default" comment="" />
+    <list default="true" id="e4787f03-cfed-48e7-b72a-f543f44b5403" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AS/As.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/DB/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AS/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/helpers-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/logtraces-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/maintenance-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/mobilenetwork-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/DB/node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/DB/operator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AS/tests/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/token-test.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AS/apis/SimplePushAPI_v1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AS/as_main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AS/as_server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config.js.ic" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pushserverd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/start.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/version.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/about.tmpl" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/constants.js" afterPath="$PROJECT_DIR$/common/Constants.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/helpers.js" afterPath="$PROJECT_DIR$/common/Helpers.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/msgbroker.js" afterPath="$PROJECT_DIR$/common/MsgBroker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/Cryptography.js" afterPath="$PROJECT_DIR$/common/Cryptography.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/DataStore.js" afterPath="$PROJECT_DIR$/common/DataStore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/Logger.js" afterPath="$PROJECT_DIR$/common/Logger.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/Maintenance.js" afterPath="$PROJECT_DIR$/common/Maintenance.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/MobileNetwork.js" afterPath="$PROJECT_DIR$/common/MobileNetwork.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Monitor.js" afterPath="$PROJECT_DIR$/Monitor/Monitor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/config.json" afterPath="$PROJECT_DIR$/Monitor/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UA/datamanager.js" afterPath="$PROJECT_DIR$/UA/datamanager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/logtraces.js" afterPath="$PROJECT_DIR$/common/logtraces.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WakeUp/udp_server.js" afterPath="$PROJECT_DIR$/WakeUp/udp_server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WakeUp/wakeup_server.js" afterPath="$PROJECT_DIR$/WakeUp/wakeup_server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UA/ws_server.js" afterPath="$PROJECT_DIR$/UA/ws_server.js" />
+    </list>
     <ignored path="notification_next.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372332728799" ignored="false" />
-    <file path="/Dummy.txt" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372332834235" ignored="false" />
+    <file path="/Dummy.txt" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373869575493" ignored="false" />
     <file path="/constants.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372333752537" ignored="false" />
     <file path="/msg_mon_main.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372334093690" ignored="false" />
     <file path="/msg_mon_server.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372345503614" ignored="false" />
     <file path="/config.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372335702935" ignored="false" />
-    <file path="/config.json" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372340201012" ignored="false" />
-    <file path="/DataStore.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372358990243" ignored="false" />
-    <file path="/a.dummy" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372339949314" ignored="false" />
-    <file path="/Monitor.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372359895076" ignored="false" />
-    <file path="/msgbroker.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372342221693" ignored="false" />
-    <file path="/Logger.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372360584658" ignored="false" />
-    <file path="/MobileNetwork.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372365624117" ignored="false" />
+    <file path="/config.json" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373381665698" ignored="false" />
+    <file path="/DataStore.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373278214013" ignored="false" />
+    <file path="/a.dummy" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373381513757" ignored="false" />
+    <file path="/Monitor.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373280533802" ignored="false" />
+    <file path="/msgbroker.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373278936178" ignored="false" />
+    <file path="/Logger.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373276814288" ignored="false" />
+    <file path="/MobileNetwork.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373276442740" ignored="false" />
+    <file path="/app.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373280525179" ignored="false" />
+    <file path="/node.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373381504472" ignored="false" />
+    <file path="/operator.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373276508176" ignored="false" />
+    <file path="/as_server.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373287978758" ignored="false" />
+    <file path="/Maintenance.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373285946445" ignored="false" />
+    <file path="/helpers.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373286994332" ignored="false" />
+    <file path="/As.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373383241229" ignored="false" />
+    <file path="/Constants.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373383376713" ignored="false" />
+    <file path="/Cryptograpy-test.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373384654143" ignored="false" />
+    <file path="/Cryptography.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373383590817" ignored="false" />
+    <file path="/blah-test.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373384544866" ignored="false" />
+    <file path="/x-crypto-test.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373386119228" ignored="false" />
+    <file path="/helpers-test.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373387468961" ignored="false" />
+    <file path="/Helpers.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373387091947" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,30 +88,45 @@
     <favorites_list name="notification_next" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="MobileNetwork.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/MobileNetwork.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="29" selection-start="964" selection-end="964" vertical-scroll-proportion="0.16292135">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataStore.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/DataStore.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="45" selection-start="849" selection-end="857" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="MsgBroker.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/common/MsgBroker.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="32" column="47" selection-start="748" selection-end="748" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DataStore.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/common/DataStore.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="43" column="22" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.59549356">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="DataStore.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/common/DataStore.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="29" column="16" selection-start="745" selection-end="745" vertical-scroll-proportion="0.37017167">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -67,6 +135,7 @@
   </component>
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
     <option name="myDateState">
@@ -76,27 +145,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/AS/main.js" />
-        <option value="$PROJECT_DIR$/common/constants.js" />
-        <option value="$PROJECT_DIR$/Monitor/msg_mon_main.js" />
-        <option value="$PROJECT_DIR$/Monitor/msg_mon_server.js" />
-        <option value="$PROJECT_DIR$/Monitor/config.js" />
-        <option value="$PROJECT_DIR$/common/msgbroker.js" />
-        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/common/tests/x-crypto-test.js" />
+        <option value="$PROJECT_DIR$/common/Maintenance.js" />
+        <option value="$PROJECT_DIR$/common/DB/app.js" />
+        <option value="$PROJECT_DIR$/common/DB/node.js" />
+        <option value="$PROJECT_DIR$/common/Helpers.js" />
+        <option value="/Volumes/Mozilla/tid/notification_server/test/unit/mobilenetwork-test.js" />
         <option value="$PROJECT_DIR$/common/DataStore.js" />
-        <option value="$PROJECT_DIR$/Monitor/Monitor.js" />
         <option value="$PROJECT_DIR$/Monitor/config.json" />
-        <option value="$PROJECT_DIR$/common/Logger.js" />
-        <option value="$PROJECT_DIR$/common/Cryptography.js" />
         <option value="$PROJECT_DIR$/common/MobileNetwork.js" />
+        <option value="$PROJECT_DIR$/Monitor/Monitor.js" />
+        <option value="$PROJECT_DIR$/common/tests/logtraces-test.js" />
+        <option value="$PROJECT_DIR$/common/tests/helpers-test.js" />
+        <option value="$PROJECT_DIR$/common/tests/maintenance-test.js" />
+        <option value="$PROJECT_DIR$/common/tests/mobilenetwork-test.js" />
+        <option value="/Volumes/Mozilla/tid/notification_server/test/functional/common.js" />
+        <option value="$PROJECT_DIR$/common/tests/token-test.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="29" />
-    <option name="width" value="1260" />
-    <option name="height" value="760" />
+    <option name="x" value="-296" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -167,7 +239,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -242,8 +313,77 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification_next" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification_next" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification_next" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification_next" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification_next" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification_next" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification_next" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification_next" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,6 +393,7 @@
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="settings.nodejs" />
     <property name="JavaScriptLanguageLevel" value="ES5" />
+    <property name="last_opened_file_path" value="/Volumes/Mozilla/tid/notification_server/test" />
     <property name="FullScreen" value="false" />
     <property name="JavaScriptPreferStrict" value="true" />
     <property name="options.searchVisible" value="true" />
@@ -260,6 +401,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/common/tests" />
       <recent name="$PROJECT_DIR$/UA" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -340,25 +482,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="29" width="1260" height="760" extended-state="6" />
+    <frame x="-296" y="-1080" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24375" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3609375" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25383994" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16816026" sideWeight="0.75416666" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.240625" sideWeight="0.5002636" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35947046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24583334" sideWeight="0.49973643" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -434,50 +576,41 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.js">
+    <entry file="file://$PROJECT_DIR$/common/Cryptography.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="4" selection-start="3555" selection-end="3555" vertical-scroll-proportion="0.33236152">
+        <state line="23" column="14" selection-start="536" selection-end="536" vertical-scroll-proportion="0.37017167">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Monitor/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="9" selection-start="327" selection-end="754" vertical-scroll-proportion="0.52863437">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
+    <entry file="file://$PROJECT_DIR$/AS/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="18" selection-start="3393" selection-end="3399" vertical-scroll-proportion="0.66292137">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UA/ws_server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="26" selection-start="1969" selection-end="1975" vertical-scroll-proportion="0.04373178">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/WebStorm6/extLibs/nodejs-v0.10.12-src/core-modules-sources/lib/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="20" selection-start="2897" selection-end="2897" vertical-scroll-proportion="0.3735955">
+        <state line="18" column="6" selection-start="453" selection-end="453" vertical-scroll-proportion="0.2973568">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Monitor/Monitor.js">
+    <entry file="file://$PROJECT_DIR$/common/Constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="35" selection-start="3840" selection-end="3840" vertical-scroll-proportion="0.17705736">
+        <state line="24" column="17" selection-start="464" selection-end="464" vertical-scroll-proportion="0.38626608">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/helpers.js">
+    <entry file="file://$PROJECT_DIR$/common/tests/x-crypto-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="15" selection-start="407" selection-end="407" vertical-scroll-proportion="-0.36936936">
+        <state line="35" column="48" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.4527897">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -486,85 +619,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/Maintenance.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="28" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.8426966">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/logtraces.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.69970846">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/Logger.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="38" selection-start="5548" selection-end="5548" vertical-scroll-proportion="0.15282393">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UA/config.json">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Monitor/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="379" selection-end="379" vertical-scroll-proportion="0.813253">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/Cryptography.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="348" selection-end="348" vertical-scroll-proportion="0.3483146">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/msgbroker.js">
+    <entry file="file://$PROJECT_DIR$/common/tests/logtraces-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="13" selection-start="2718" selection-end="2718" vertical-scroll-proportion="0.46355686">
+        <state line="9" column="31" selection-start="284" selection-end="284" vertical-scroll-proportion="0.14484979">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/tests/maintenance-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="21" selection-start="311" selection-end="311" vertical-scroll-proportion="0.09656652">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Monitor/Monitor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="27" selection-start="2602" selection-end="2602" vertical-scroll-proportion="1.3841202">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/WebStorm6/extLibs/nodejs-v0.10.12-src/core-modules-sources/lib/_linklist.js">
+    <entry file="file://$PROJECT_DIR$/common/tests/helpers-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="9" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.084269665">
-          <folding />
+        <state line="20" column="32" selection-start="669" selection-end="669" vertical-scroll-proportion="0.22532189">
+          <folding>
+            <marker date="1373873321000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1373873321000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1373873321000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1373873321000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1373873321000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1373873321000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/DataStore.js">
+    <entry file="file://$PROJECT_DIR$/common/tests/mobilenetwork-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="45" selection-start="849" selection-end="857" vertical-scroll-proportion="0.0">
+        <state line="20" column="6" selection-start="476" selection-end="476" vertical-scroll-proportion="0.22532189">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1373873836000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/MobileNetwork.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="29" selection-start="964" selection-end="964" vertical-scroll-proportion="0.16292135">
+        <state line="35" column="64" selection-start="893" selection-end="893" vertical-scroll-proportion="0.16997792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Mozilla/tid/notification_server/test/functional/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="2" selection-start="2087" selection-end="2322" vertical-scroll-proportion="0.9195279">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/tests/token-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="30" selection-start="621" selection-end="621" vertical-scroll-proportion="0.32119206">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/MsgBroker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="47" selection-start="748" selection-end="748" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/DataStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="22" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.59549356">
+          <folding />
         </state>
       </provider>
     </entry>

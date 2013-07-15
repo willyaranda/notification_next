@@ -40,9 +40,6 @@ exports.consts = {
      * Self-signed: http://stackoverflow.com/questions/9519707/can-nodejs-generate-ssl-certificates
      */
 
-    caDir: '../examples/ssl_cert/cas',
-    key: '../examples/ssl_cert/server-key.pem',
-    cert: '../examples/ssl_cert/server-cert.pem',
 
     /**
      * Public base URL to receive notifications. This will be the base to
@@ -59,7 +56,7 @@ exports.consts = {
 };
 
 /********************* Logger parameters ***********************************/
-var loglevel = require('./common/constants.js').loglevels;
+var loglevel = require('./common/Constants.js').loglevels;
 exports.logger = {
     /**
      * Log levels:
@@ -138,13 +135,7 @@ exports.NS_AS = {
     /**
      * Binding interfaces and ports to listen to. You can have multiple processes.
      */
-    interfaces: [
-        {
-            ip: '0.0.0.0',
-            port: 8081,
-            ssl: true        // Enable SSL
-        }
-    ]
+
 };
 
 /********************* NS_MSG_MONITOR ********************************/

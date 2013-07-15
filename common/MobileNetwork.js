@@ -10,9 +10,12 @@
 
 var DataStore = require('./DataStore.js');
 var Log = require('./Logger.js');
-var helpers = require('./helpers.js');
+var helpers = require('./Helpers.js');
 var events = require('events');
 var util = require('util');
+
+var operator = require('./DB/operator');
+
 
 function MobileNetwork() {
     events.EventEmitter.call(this);
@@ -30,9 +33,10 @@ MobileNetwork.prototype.callbackReady = function (callback) {
     this.callbacks.push(helpers.checkCallback(callback));
 };
 
-MobileNetwork.prototype.init = function (machines, name) {
+MobileNetwork.prototype.init = function (machines, name, options, cb) {
     this.resetCache();
     var self = this;
+    this.callbackReady(cb);
     DataStore.once('connected', function () {
         Log.debug('MobileNetwork --> Library read');
         self.ready = true;
@@ -53,6 +57,10 @@ MobileNetwork.prototype.init = function (machines, name) {
     });
 };
 
+MobileNetwork.prototype.close = function (cb) {
+    DataStore.close(cb);
+};
+
 MobileNetwork.prototype.resetCache = function (callback) {
     this.cache = {};
     Log.debug('MobileNetwork -->  cache cleaned');
@@ -64,7 +72,7 @@ MobileNetwork.prototype.getNetwork = function (mcc, mnc, callback) {
     callback = helpers.checkCallback(callback);
 
     var index = helpers.padNumber(mcc, 3) + '-' + helpers.padNumber(mnc, 2);
-    var value = null;
+    var value;
 
     Log.debug('MobileNetwork --> looking for MCC-MNC: ' + index);
     // Check if the network is in the cache
@@ -76,7 +84,7 @@ MobileNetwork.prototype.getNetwork = function (mcc, mnc, callback) {
 
     var self = this;
     // Check if the network is in the database and update cache
-    DataStore.getOperator(mcc, mnc, function (error, data) {
+    operator.getByMccMnc(mcc, mnc, function (error, data) {
         if (error) {
             Log.error(Log.messages.ERROR_MOBILENETWORKERROR, {
                 error: error
@@ -100,7 +108,6 @@ MobileNetwork.prototype.getNetwork = function (mcc, mnc, callback) {
 // Singleton
 ///////////////////////////////////////////
 var _mn = new MobileNetwork();
-_mn.init();
 function getMobileNetwork() {
     return _mn;
 }

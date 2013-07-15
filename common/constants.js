@@ -20,23 +20,17 @@ exports.loglevels = {
     ALARM: 64
 };
 
-exports.errorcodes = {
-    200: [200, 'Ok'],
-    400: [400, 'Generic error'],
-    404: [404, 'Not Found'],
-    403: [403, 'Not allowed on production system'],
-    500: [500, 'Not ready yet: Try again later']
-};
-
 exports.connectionstate = {
     DISCONNECTED: 0,
     CONNECTED: 1,
-    WAKEUP: 2
+    UDP: 2,
+    WAPPUSH: 3
 };
 
 exports.statuscodes = {
     OK: 200,
     REGISTERED: 200,
-    UDPREGISTERED: 201,
-    UNREGISTERED: 202
+    REGISTERED_UDP: 201,
+    REGISTERED_WAPPUSH: 202,
+    UNREGISTERED: 220
 };

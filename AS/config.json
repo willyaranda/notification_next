@@ -1,0 +1,22 @@
+{
+    "numProcesses": 1,
+    "listen": {
+        "ip": "0.0.0.0",
+        "port": 8081,
+        "ssl": false
+    },
+    "caDir": "../examples/ssl_cert/cas",
+    "key": "../examples/ssl_cert/server-key.pem",
+    "cert": "../examples/ssl_cert/server-cert.pem",
+    "queues": [
+        {
+            "host": "localhost",
+            "port": 5672,
+            "login": "guest",
+            "password": "guest",
+            "heartbeat": 1200
+        }
+    ],
+    "PREPRO": true,
+    "logfile": "AS.log"
+}

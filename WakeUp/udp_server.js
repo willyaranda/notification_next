@@ -8,7 +8,7 @@
  */
 
 var log = require('../common/Logger.js'),
-    msgBroker = require('../common/msgbroker.js'),
+    msgBroker = require('../common/MsgBroker.js'),
     mn = require('../common/MobileNetwork.js'),
     http = require('http'),
     https = require('https'),

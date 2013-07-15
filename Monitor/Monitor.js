@@ -9,14 +9,12 @@
 'use strict';
 
 var log = require('../common/Logger.js');
-
-var msgBroker = require('../common/msgbroker.js');
+var msgBroker = require('../common/MsgBroker.js');
 var dataStore = require('../common/DataStore.js');
 var config = require('./config.json');
 var events = require('events');
 var util = require('util');
-
-var connectionstate = require('../common/constants.js').connectionstate;
+var connectionstate = require('../common/Constants.js').connectionstate;
 
 function Monitor() {
     this.dataStoreReady = false;
@@ -67,7 +65,7 @@ Monitor.prototype.init = function () {
     // Connect to the message broker
     process.nextTick(function () {
         msgBroker.init(config.queues);
-        dataStore.init(config.db.machines, config.db.name);
+        dataStore.init(config.db.machines, config.db.name, config.db.options);
     });
 
     // Check if everything is correct
@@ -106,7 +104,6 @@ Monitor.prototype.stop = function (controlled) {
 
 Monitor.prototype.checkIfReady = function() {
     if (this.dataStoreReady && this.msgBrokerReady) {
-        this.emit('ready');
         this.onReady();
     }
 };
@@ -114,8 +111,12 @@ Monitor.prototype.checkIfReady = function() {
 Monitor.prototype.onReady = function() {
     clearTimeout(this.readyTimeout);
 
-    //We want a durable queue, that do not autodeletes on last closed connection, and
-    // with HA activated (mirrored in each rabbit server)
+    //Emit we are ready
+    this.emit('ready');
+    log.info('Monitor is ready to work');
+
+    //We want a durable queue, that do not autodeletes on last closed connection,
+    //and with HA activated (mirrored in each rabbit server)
     var args = {
         durable: true,
         autoDelete: false,
@@ -132,31 +133,32 @@ Monitor.prototype.onReady = function() {
 
     // Retry UDP messages for unACKed messages
     self.retryUDPnotACKedInterval = setInterval(function retryUDPnotACKed() {
-        Monitor.retryUDPnotACKed();
+        self.retryUDPnotACKed();
     }, config.retryTime);
 };
 
-// Static Monitor methods
-Monitor.retryUDPnotACKed = function () {
+Monitor.prototype.retryUDPnotACKed = function () {
+    var self = this;
     log.debug('Monitor::retryUDPnotACKed --> Starting retry procedure');
-    dataStore.getUDPClientsAndUnACKedMessages(function (error, nodes) {
+    nodes.getUDPClientsAndUnACKedMessages(function (error, nodes) {
         if (error) {
             return;
         }
 
         if (!Array.isArray(nodes) || !nodes.length) {
-            log.debug('Monitor::retryUDPnotACKed --> No pending messages for UDP clients');
+            log.debug('Monitor::retryUDPnotACKed --> No pending messages for' +
+                'UDP clients');
             return;
         }
 
         nodes.forEach(function (node) {
-            Monitor.onNodeData(node, {});
+            self.onNodeData(node, {});
         });
     });
 };
 
 
-Monitor.onNodeData = function (nodeData, json) {
+Monitor.prototype.onNodeData = function (nodeData, json) {
     if (!nodeData || !nodeData.si || !nodeData._id) {
         log.error(log.messages.ERROR_BACKENDERROR, {
             class: 'Monitor',
@@ -209,7 +211,7 @@ Monitor.onNewMessage = function (msg) {
         return;
     }
 
-    dataStore.getApplication(json.app, Monitor.onApplicationData, json);
+    app.getNodesByAppToken(json.app, Monitor.onApplicationData, json);
 };
 
 Monitor.onApplicationData = function (error, appData, json) {
