@@ -1,0 +1,4 @@
+{
+    "publicBaseURL": "https://localhost:8081/v1",
+    "cryptokey": "12345678901234567890"
+}

@@ -1,0 +1,5 @@
+{
+    "consoleoutput": 1,
+    "base_path": "/var/log/push_server/",
+    "alarm_file": "/var/log/push_server/alarms.log"
+}

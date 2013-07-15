@@ -2,49 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4787f03-cfed-48e7-b72a-f543f44b5403" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AS/As.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/DB/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AS/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/helpers-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/logtraces-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/maintenance-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/mobilenetwork-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/DB/node.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/DB/operator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AS/tests/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/tests/token-test.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AS/apis/SimplePushAPI_v1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AS/as_main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AS/as_server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config.js.ic" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pushserverd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/start.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/version.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/about.tmpl" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/common/constants.js" afterPath="$PROJECT_DIR$/common/Constants.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/common/helpers.js" afterPath="$PROJECT_DIR$/common/Helpers.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/common/msgbroker.js" afterPath="$PROJECT_DIR$/common/MsgBroker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/Cryptography.js" afterPath="$PROJECT_DIR$/common/Cryptography.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/DataStore.js" afterPath="$PROJECT_DIR$/common/DataStore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/Logger.js" afterPath="$PROJECT_DIR$/common/Logger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/Maintenance.js" afterPath="$PROJECT_DIR$/common/Maintenance.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/MobileNetwork.js" afterPath="$PROJECT_DIR$/common/MobileNetwork.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Monitor.js" afterPath="$PROJECT_DIR$/Monitor/Monitor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/config.json" afterPath="$PROJECT_DIR$/Monitor/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UA/datamanager.js" afterPath="$PROJECT_DIR$/UA/datamanager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/logtraces.js" afterPath="$PROJECT_DIR$/common/logtraces.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WakeUp/udp_server.js" afterPath="$PROJECT_DIR$/WakeUp/udp_server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WakeUp/wakeup_server.js" afterPath="$PROJECT_DIR$/WakeUp/wakeup_server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AS/As.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AS/config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AS/views/about.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Monitor/Monitor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Monitor/config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/UA/config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/UA/connectors/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/UA/connectors/connector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/UA/connectors/connector_udp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/UA/connectors/connector_ws.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/UA/datamanager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/UA/ws_server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakeUp/udp_main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakeUp/udp_server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakeUp/wakeup_main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakeUp/wakeup_server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/Cryptography.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/DB/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/DB/node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/DB/operator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/DataStore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/Logger.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/Maintenance.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/MobileNetwork.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/Pages.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/Token.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/helpers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/logtraces.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/msgbroker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/aboutWS.tmpl" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AS/tests/test.js" afterPath="$PROJECT_DIR$/src/common/Logger/config.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/tests/helpers-test.js" afterPath="$PROJECT_DIR$/test/helpers-test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/tests/logtraces-test.js" afterPath="$PROJECT_DIR$/test/logtraces-test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/tests/maintenance-test.js" afterPath="$PROJECT_DIR$/test/maintenance-test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/tests/mobilenetwork-test.js" afterPath="$PROJECT_DIR$/test/mobilenetwork-test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/tests/token-test.js" afterPath="$PROJECT_DIR$/test/token-test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/tests/x-crypto-test.js" afterPath="$PROJECT_DIR$/test/x-crypto-test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/src/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/string/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/string/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/string/README.md" afterPath="$PROJECT_DIR$/node_modules/string/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/string/component.json" afterPath="$PROJECT_DIR$/node_modules/string/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/string/package.json" afterPath="$PROJECT_DIR$/node_modules/string/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/string/lib/string.js" afterPath="$PROJECT_DIR$/node_modules/string/lib/string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/string/lib/string.min.js" afterPath="$PROJECT_DIR$/node_modules/string/lib/string.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UA/ws_server.js" afterPath="$PROJECT_DIR$/UA/ws_server.js" />
     </list>
     <ignored path="notification_next.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372332728799" ignored="false" />
-    <file path="/Dummy.txt" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373869575493" ignored="false" />
+    <file path="/Dummy.txt" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373879093095" ignored="false" />
     <file path="/constants.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372333752537" ignored="false" />
     <file path="/msg_mon_main.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372334093690" ignored="false" />
     <file path="/msg_mon_server.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1372345503614" ignored="false" />
@@ -70,6 +79,14 @@
     <file path="/x-crypto-test.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373386119228" ignored="false" />
     <file path="/helpers-test.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373387468961" ignored="false" />
     <file path="/Helpers.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373387091947" ignored="false" />
+    <file path="$PROJECT_DIR$/src/UA/connectors/connector_udp.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373877205393" ignored="false" />
+    <file path="$PROJECT_DIR$/src/UA/connectors/connector.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373877205395" ignored="false" />
+    <file path="$PROJECT_DIR$/src/UA/ws_server.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373877239388" ignored="false" />
+    <file path="$PROJECT_DIR$/src/WakeUp/wakeup_main.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373877205398" ignored="false" />
+    <file path="$PROJECT_DIR$/src/WakeUp/wakeup_server.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373877239388" ignored="false" />
+    <file path="$PROJECT_DIR$/src/WakeUp/udp_server.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373877205399" ignored="false" />
+    <file path="$PROJECT_DIR$/src/WakeUp/udp_main.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373877205399" ignored="false" />
+    <file path="$PROJECT_DIR$/src/UA/datamanager.js" changelist="e4787f03-cfed-48e7-b72a-f543f44b5403" time="1373877239388" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,45 +105,37 @@
     <favorites_list name="notification_next" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="MsgBroker.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/common/MsgBroker.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="47" selection-start="748" selection-end="748" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DataStore.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/common/DataStore.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="22" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.59549356">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="DataStore.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/common/DataStore.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="16" selection-start="745" selection-end="745" vertical-scroll-proportion="0.37017167">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="Cryptography.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Cryptography/Cryptography.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="50" selection-start="571" selection-end="572" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="11" selection-start="82" selection-end="82" vertical-scroll-proportion="0.12875536">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Token.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Token.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -145,22 +154,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/common/tests/x-crypto-test.js" />
-        <option value="$PROJECT_DIR$/common/Maintenance.js" />
-        <option value="$PROJECT_DIR$/common/DB/app.js" />
-        <option value="$PROJECT_DIR$/common/DB/node.js" />
-        <option value="$PROJECT_DIR$/common/Helpers.js" />
-        <option value="/Volumes/Mozilla/tid/notification_server/test/unit/mobilenetwork-test.js" />
-        <option value="$PROJECT_DIR$/common/DataStore.js" />
-        <option value="$PROJECT_DIR$/Monitor/config.json" />
-        <option value="$PROJECT_DIR$/common/MobileNetwork.js" />
-        <option value="$PROJECT_DIR$/Monitor/Monitor.js" />
-        <option value="$PROJECT_DIR$/common/tests/logtraces-test.js" />
-        <option value="$PROJECT_DIR$/common/tests/helpers-test.js" />
-        <option value="$PROJECT_DIR$/common/tests/maintenance-test.js" />
-        <option value="$PROJECT_DIR$/common/tests/mobilenetwork-test.js" />
-        <option value="/Volumes/Mozilla/tid/notification_server/test/functional/common.js" />
-        <option value="$PROJECT_DIR$/common/tests/token-test.js" />
+        <option value="$PROJECT_DIR$/common/MsgBroker.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/test/logtraces-test.js" />
+        <option value="$PROJECT_DIR$/test/maintenance-test.js" />
+        <option value="$PROJECT_DIR$/test/mobilenetwork-test.js" />
+        <option value="$PROJECT_DIR$/test/token-test.js" />
+        <option value="$PROJECT_DIR$/test/x-crypto-test.js" />
+        <option value="$PROJECT_DIR$/test/helpers-test.js" />
+        <option value="$PROJECT_DIR$/src/common/Token.js" />
+        <option value="$PROJECT_DIR$/config.json" />
+        <option value="$PROJECT_DIR$/src/common/Helpers/Helpers.js" />
+        <option value="$PROJECT_DIR$/config.js" />
+        <option value="$PROJECT_DIR$/src/common/Logger/config.json" />
+        <option value="$PROJECT_DIR$/src/config.json" />
+        <option value="$PROJECT_DIR$/src/common/Logger/Logger.js" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -239,6 +248,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -267,7 +277,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WakeUp" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -281,31 +291,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notification_next" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notification_next" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Monitor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notification_next" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notification_next" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -323,21 +309,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notification_next" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notification_next" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -345,7 +317,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DB" />
+              <option name="myItemId" value="Logger" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -359,53 +331,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notification_next" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notification_next" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AS" />
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
+              <option name="myItemId" value="Cryptography" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="settings.nodejs" />
+    <property name="recentsLimit" value="5" />
     <property name="JavaScriptLanguageLevel" value="ES5" />
     <property name="last_opened_file_path" value="/Volumes/Mozilla/tid/notification_server/test" />
     <property name="FullScreen" value="false" />
     <property name="JavaScriptPreferStrict" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/common/tests" />
       <recent name="$PROJECT_DIR$/UA" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/WakeUp" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/common/Helpers" />
+      <recent name="$PROJECT_DIR$/src/common/DataStore" />
+      <recent name="$PROJECT_DIR$/src/common/Cryptography" />
+      <recent name="$PROJECT_DIR$/src/common/Logger" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.Monitor.js">
@@ -488,7 +454,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24375" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16816026" sideWeight="0.75416666" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16816026" sideWeight="0.759375" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.240625" sideWeight="0.5002636" order="7" side_tool="true" content_ui="tabs" />
@@ -497,7 +463,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35947046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.359375" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24583334" sideWeight="0.49973643" order="5" side_tool="false" content_ui="tabs" />
@@ -576,135 +542,122 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/Cryptography.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="14" selection-start="536" selection-end="536" vertical-scroll-proportion="0.37017167">
+        <state line="10" column="18" selection-start="312" selection-end="312" vertical-scroll-proportion="0.16519824">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/helpers-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="349" selection-end="349" vertical-scroll-proportion="0.14978603">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/x-crypto-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="25" selection-start="713" selection-end="713" vertical-scroll-proportion="0.3266762">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Monitor/config.json">
+    <entry file="file://$PROJECT_DIR$/test/token-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="9" selection-start="327" selection-end="754" vertical-scroll-proportion="0.52863437">
+        <state line="10" column="28" selection-start="304" selection-end="304" vertical-scroll-proportion="0.10841655">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AS/config.json">
+    <entry file="file://$PROJECT_DIR$/test/mobilenetwork-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="6" selection-start="453" selection-end="453" vertical-scroll-proportion="0.2973568">
+        <state line="12" column="36" selection-start="326" selection-end="326" vertical-scroll-proportion="0.12838802">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/Constants.js">
+    <entry file="file://$PROJECT_DIR$/test/maintenance-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="17" selection-start="464" selection-end="464" vertical-scroll-proportion="0.38626608">
+        <state line="12" column="34" selection-start="324" selection-end="324" vertical-scroll-proportion="0.12838802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/logtraces-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="241" selection-end="241" vertical-scroll-proportion="0.17118402">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="2" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.1868759">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="1" selection-start="93" selection-end="93" vertical-scroll-proportion="0.06646972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AS/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="19" selection-start="473" selection-end="473" vertical-scroll-proportion="0.42097488">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Helpers/Helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="41" selection-start="935" selection-end="935" vertical-scroll-proportion="0.6205421">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/tests/x-crypto-test.js">
+    <entry file="file://$PROJECT_DIR$/src/common/Logger/Logger.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="48" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.4527897">
+        <state line="12" column="41" selection-start="350" selection-end="350" vertical-scroll-proportion="0.20156775">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/Maintenance.js">
+    <entry file="file://$PROJECT_DIR$/src/common/Logger/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="1" column="18" selection-start="7" selection-end="20" vertical-scroll-proportion="0.016519824">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Token.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Cryptography/Cryptography.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="50" selection-start="571" selection-end="572" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/tests/logtraces-test.js">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="31" selection-start="284" selection-end="284" vertical-scroll-proportion="0.14484979">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/tests/maintenance-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="21" selection-start="311" selection-end="311" vertical-scroll-proportion="0.09656652">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Monitor/Monitor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="27" selection-start="2602" selection-end="2602" vertical-scroll-proportion="1.3841202">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/tests/helpers-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="32" selection-start="669" selection-end="669" vertical-scroll-proportion="0.22532189">
-          <folding>
-            <marker date="1373873321000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1373873321000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1373873321000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1373873321000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1373873321000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1373873321000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/tests/mobilenetwork-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="6" selection-start="476" selection-end="476" vertical-scroll-proportion="0.22532189">
-          <folding>
-            <marker date="1373873836000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/MobileNetwork.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="64" selection-start="893" selection-end="893" vertical-scroll-proportion="0.16997792">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Volumes/Mozilla/tid/notification_server/test/functional/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="2" selection-start="2087" selection-end="2322" vertical-scroll-proportion="0.9195279">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/tests/token-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="30" selection-start="621" selection-end="621" vertical-scroll-proportion="0.32119206">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/MsgBroker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="47" selection-start="748" selection-end="748" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/DataStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="22" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.59549356">
+        <state line="8" column="11" selection-start="82" selection-end="82" vertical-scroll-proportion="0.12875536">
           <folding />
         </state>
       </provider>

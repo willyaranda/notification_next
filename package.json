@@ -1,0 +1,50 @@
+{
+    "name": "push-notification-server",
+    "author": "Telefónica I+D. 2012-2013",
+    "description": "a push notification server for desktop and mobile",
+    "contributors": [
+        {
+            "name": "Fernando Rodriguez Sela",
+            "email": "frsela@tid.es"
+        },
+        {
+            "name": "Guillermo López Leal",
+            "email": "gll@tid.es"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/telefonicaid/notification_server"
+    },
+    "bugs": {
+        "url": "http://github.com/telefonicaid/notification_server/issues"
+    },
+    "keywords": [
+        "push",
+        "notification",
+        "server",
+        "mobile"
+    ],
+    "dependencies": {
+        "node-uuid": "1.4.x",
+        "websocket": "1.0.x",
+        "mongoose": "3.6.x",
+        "amqp": "0.1.x",
+        "string" : "1.5.x",
+        "range_check": "0.0.4"
+    },
+    "devDependencies": {
+        "vows": "0.7.x",
+        "nodetime": "0.8.x"
+    },
+    "engines": {
+        "node": ">=0.8.x"
+    },
+    "license": {
+        "type": "GNU Affero General Public License",
+        "url": "http://www.gnu.org/licenses/agpl-3.0.html"
+    },
+    "scripts": {
+       "test": "./node_modules/.bin/vows --spec --isolate"
+    }
+}
