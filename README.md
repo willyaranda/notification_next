@@ -1,4 +1,4 @@
-notification_next
+notification_next [![Build Status](https://travis-ci.org/willyaranda/notification_next.png?branch=master)](https://travis-ci.org/willyaranda/notification_next)
 =================
 
 Push notification server. v1-fix is old and uses Node 0.8. This will use 0.10 as base and more improvements, in code architecture, and more to come.
